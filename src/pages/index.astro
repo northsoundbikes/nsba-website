@@ -1,16 +1,67 @@
 ---
-
+import { SEO } from "astro-seo";
 ---
 
 <html lang="en">
 	<head>
+		<SEO
+			noindex={true}
+			title="NSBA | Representing North Sound bike riders."
+		/>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>"
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-blue-300">
+		<div class="mx-auto mt-12 bg-white max-w-xl rounded-sm shadow-md">
+			<img src="bikers.png" />
+			<div class="p-8">
+				<header>
+					<h1 class="text-xl font-bold">
+						North Sound Bicycle Advocates
+					</h1>
+				</header>
+				<main class="mt-2">
+					<p>
+						NSBA represents bike riders across <span
+							class="font-medium">north King</span
+						> and <span class="font-medium"
+							>south Snohomish counties.</span
+						> We work to improve bike infrastructure, promote biking,
+						and ensure safety for everyone on our roads.
+					</p>
+				</main>
+				<div class="my-8">
+					<h2 class="font-bold mb-2">Join our mailing list!</h2>
+					<form action="https://submit-form.com/cXqRJMofO" class="flex flex-col gap-1 md:flex-row">
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="your@email.com"
+							required
+							class="mr-1"
+						/>
+						<button
+							type="submit"
+							class="bg-blue-800 text-white py-2 px-3 rounded-sm"
+							>Submit</button
+						>
+					</form>
+				</div>
+				<p class="mt-4">
+					Contact us at
+					<a
+						class="text-blue-800 underline font-medium"
+						href="mailto:board@northsoundbikes.org"
+						>board@northsoundbikes.org</a
+					> 💌
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
