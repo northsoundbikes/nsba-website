@@ -55,12 +55,12 @@
             </a>
             <div class="hidden lg:flex lg:gap-x-12">
                 <a
-                    href="about"
+                    href="/about"
                     class="font-semibold leading-6 text-gray-900"
                     >About</a
                 >
                 <a
-                    href="get-involved"
+                    href="/get-involved"
                     class="font-semibold leading-6 text-gray-900"
                     >Get Involved</a
                 >
@@ -153,19 +153,19 @@
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
                             <a
-                                href="about"
+                                href="/about"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-blue-100"
                                 >About</a
                             >
                             <a
-                                href="#"
+                                href="/get-involved"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-blue-100"
                                 >Get Involved</a
                             >
                         </div>
                         <div class="py-12">
                             <a
-							href="get-involved"
+							href="/get-involved"
 							class="rounded-tr-lg bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 							>Join us →</a
 						>
