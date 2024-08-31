@@ -18,7 +18,7 @@ import Map from "../components/map.svelte";
 		<meta name="viewport" content="width=device-width" />
 	</head>
 	<Layout>
-		<div class="relative px-6 pt-14 lg:px-8">
+		<div class="relative px-6 py-4 lg:px-8">
 			<video
 				autoplay
 				muted
@@ -32,13 +32,17 @@ import Map from "../components/map.svelte";
 			<div class="absolute inset-0 bg-sky-950 bg-opacity-70"></div>
 			<div class="relative z-5 mx-auto max-w-2xl py-16 sm:py-32 lg:py-32">
 				<div class="text-center">
-					<h1 class="font-serif text-4xl text-white italic mb-4">We believe</h1>
 					<h1
-						class="text-4xl tracking-tight text-white sm:text-6xl font-semibold"
+						class="font-serif text-2xl sm:text-4xl text-white italic mb-4"
+					>
+						We believe
+					</h1>
+					<h1
+						class="text-3xl tracking-tight text-white sm:text-5xl font-semibold"
 					>
 						bicycling should be safe and easy for everyone.
 					</h1>
-					<p class="mt-6 text-xl leading-8 text-white">
+					<p class="mt-6 text-lg sm:text-xl sm:leading-8 text-white">
 						NSBA works to improve infrastructure, promote biking,
 						and ensure street safety in north King and south
 						Snohomish counties.
@@ -46,61 +50,137 @@ import Map from "../components/map.svelte";
 					<div class="mt-10 flex items-center justify-center gap-x-6">
 						<a
 							href="get-involved"
-							class="rounded-tr-lg bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							class="rounded-tr-lg bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 							>Join us →</a
 						>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="relative px-6 py-14 lg:px-8 max-w-7xl mx-auto mb-10">
-			<h1 class="text-3xl font-bold mb-6">Current projects:</h1>
-			<div class="flex flex-row h-60 gap-4">
-				<div class="bg-slate-300 rounded-xl p-4 basis-1/4">
-					<h3 class="font-semibold text-2xl mb-2">Advocating for better bike networks<h3>
-					<p>Advocating for better trail and road infrastructure in Edmonds, Shoreline, Lynnwood, and MLT.</p>
-					<img src="westgate.jpg" alt="Bikes outside Westgate Elementary in Edmonds"/>
+		<div class="px-6 py-14 lg:px-8 max-w-7xl mx-auto mb-10 h-auto">
+			<h1 class="text-3xl font-semibold mb-6">
+				What we're working on:
+			</h1>
+			<div class="flex flex-col sm:flex-row gap-4 items-center md:items-stretch">
+				<div
+					class="max-w-sm bg-blue-50 border border-gray-200 rounded-lg flex-1"
+				>
+						<img
+							class="rounded-t-lg"
+							src="/involved/interurban.jpg"
+							alt=""
+						/>
+					<div class="p-5">
+							<h5
+								class="mb-2 text-2xl font-medium tracking-tight font-serif"
+							>
+								Building better bike networks
+							</h5>
+						<p class="mb-3 font-normal">
+							Advocating for better trails and safer roads in
+							Edmonds, Shoreline, Lynnwood, and MLT.
+						</p>
+					</div>
 				</div>
-				<div class="bg-slate-300 rounded-xl p-4 basis-1/4">
-					<h3 class="font-semibold text-2xl">Sharing cycling skills<h3>
-					<p>Supporting the Let's Go education program in the Edmonds School District.</p>
-					<img src="westgate.jpg" alt="Bikes outside Westgate Elementary in Edmonds"/>
+
+				<div
+					class="max-w-sm bg-blue-50 border border-gray-200 rounded-lg flex-1"
+				>
+						<img class="rounded-t-lg" src="schools.jpeg" alt="" />
+					<div class="p-5">
+							<h5
+								class="mb-2 text-2xl font-medium tracking-tight font-serif"
+							>
+								Sharing cycling skills
+							</h5>
+						<p class="mb-3 font-normal">
+							Supporting educational efforts for young bikers
+							– like the Let's Go education program.
+						</p>
+					</div>
 				</div>
-				<div class="bg-slate-300 rounded-xl p-4 basis-1/4">
-					<h3 class="font-semibold text-2xl">Bridging the Gap<h3>
-					<p>Campaigning to connect the "missing link" of the Interurban Trail between Shoreline & Edmonds.</p>
-					<img src="westgate.jpg" alt="Bikes outside Westgate Elementary in Edmonds"/>
-				</div>
-				<div class="bg-slate-300 rounded-xl p-4 basis-1/4">
-					<h3 class="font-semibold text-2xl">Building better bike networks<h3>
-					<p>Supporting the Let's Go education program in the Edmonds School District.</p>
-					<img src="westgate.jpg" alt="Bikes outside Westgate Elementary in Edmonds"/>
+
+				<div
+					class="max-w-sm bg-blue-50 border border-gray-200 rounded-lg flex-1"
+				>
+						<img
+							class="rounded-t-lg"
+							src="/involved/gap.jpg"
+							alt=""
+						/>
+					<div class="p-5">
+
+							<h5
+								class="mb-2 text-2xl font-medium tracking-tight font-serif"
+							>
+								Bridging the Gap
+							</h5>
+	
+						<p class="mb-3 font-normal">
+							Convening local leaders to connect the "missing
+							link" in the Interurban Trail between Shoreline &
+							Edmonds at S.R. 104.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	
-		<div class="bg-blue-100 py-14 sm:py-24 lg:py-32">
+
+		<div class="bg-blue-100 py-16" id="events">
 			<div class="relative px-6 lg:px-8 max-w-7xl mx-auto">
-			<h3 class="text-3xl font-bold">
-				Upcoming events
-			</h3>
+				<h3 class="text-3xl font-bold mb-4">Upcoming events:</h3>
+				<h4 class="text-xl font-semibold">Rides 🚴</h4>
+				<p class="italic mb-2">
+					Meet at Edmonds City Hall. Social pace, 8-12 miles.
+				</p>
+				<ul class="list-disc list-inside mb-6">
+					<li>September 11th, 9:30am</li>
+					<li>September 18th, 9:30am</li>
+				</ul>
+				<h4 class="text-xl font-semibold">Leadership meetings</h4>
+				<p class="italic">Open to the public – come meet us!</p>
+				<ul class="list-disc list-inside">
+					<li>September 19th, 6:30pm @ Shoreline Tool Library</li>
+					<li>
+						October 16th, 6:30pm @ Mountlake Terrace Public Library
+					</li>
+				</ul>
+			</div>
 		</div>
-		  </div>
 		<div class="bg-emerald-700 py-16 sm:py-24 lg:py-32">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-			  <div class="max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-				<h2 class="inline sm:block">Stay in the loop!</h2>
-				<p class="inline sm:block">Sign up for our newsletter.</p>
-			  </div>
-			  <form class="mt-10 max-w-md">
-					<form action="https://submit-form.com/cXqRJMofO flex gap-x-4">
-				  <label for="email-address" class="sr-only">Email address</label>
-				  <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Enter your email">
-				  <button type="submit" class="flex-none rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
-					</form>
-				<p class="mt-4 text leading-6 text-white italic">Unsubscribe at any time.</p>
-			  </form>
+				<div
+					class="max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl"
+				>
+					<h2 class="inline sm:block">Stay in the loop!</h2>
+					<p class="inline sm:block font-medium">Sign up for our newsletter.</p>
+				</div>
+				<form
+					class="mt-10 max-w-md"
+					action="https://submit-form.com/cXqRJMofO"
+				>
+					<label for="email-address" class="sr-only"
+						>Email address</label
+					>
+					<input
+						id="email-address"
+						name="email"
+						type="email"
+						autocomplete="email"
+						required
+						class="min-w-0 flex-auto rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+						placeholder="Enter your email"
+					/>
+					<button
+						type="submit"
+						class="flex-none rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+						>Subscribe</button
+					>
+					<p class="mt-4 text leading-6 text-white italic">
+						Unsubscribe at any time.
+					</p>
+				</form>
 			</div>
-		  </div>
+		</div>
 	</Layout>
 </html>
