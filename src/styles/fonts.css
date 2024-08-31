@@ -1,0 +1,166 @@
+/* Really Sans Small */
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-SemiboldItalic.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-BoldItalic.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-Italic.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small SmBd';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-Semibold.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-Regular.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-Black.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-BlackItalic.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Really Sans Small';
+    src: url('/fonts/reallysans/ReallySansSmallStudent-Bold.woff2') format('woff2'),
+        url('/fonts/reallysans/ReallySansSmallStudent-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Parclo Serif */
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-Italic.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-Bold.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-Regular.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-SemiBold.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-Medium.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-MediumItalic.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-BlackItalic.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-Black.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Parclo Serif';
+    src: url('fonts/parclo/ParcloSerifStudent-BoldItalic.woff2') format('woff2'),
+        url('fonts/parclo/ParcloSerifStudent-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
