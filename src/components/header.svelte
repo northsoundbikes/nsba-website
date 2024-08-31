@@ -4,7 +4,7 @@
     let mobileMenuOpen = false;
 
     function toggleMobileMenu() {
-        console.log("Toggling mobile menu")
+        console.log("Toggling mobile menu");
         mobileMenuOpen = !mobileMenuOpen;
     }
 
@@ -14,41 +14,47 @@
     });
 </script>
 
-<header class="bg-white">
+<header class="bg-blue-200">
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
     >
         <div class="flex items-center gap-x-12">
-            <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
+            <a href="/" class="-m-1.5 p-1.5">
+                <span class="sr-only">North Sound Bicycle Advocates</span>
                 <img
-                    class="h-8 w-auto"
-                    src="https://emoji.aranja.com/static/emoji-data/img-apple-160/1f6b2.png"
+                    class="h-16
+                     w-auto"
+                    src="logo.png"
                     alt=""
                 />
             </a>
             <div class="hidden lg:flex lg:gap-x-12">
                 <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
-                    >Product</a
+                    href="about"
+                    class="font-semibold leading-6 text-gray-900"
+                    >About</a
                 >
                 <a
+                    href="get-involved"
+                    class="font-semibold leading-6 text-gray-900"
+                    >Get Involved</a
+                >
+                <!-- <a
                     href="#"
                     class="text-sm font-semibold leading-6 text-gray-900"
-                    >Features</a
-                >
-                <a
+                    >News</a
+                > -->
+                <!-- <a
+                    href="#"
+                    class="font-semibold leading-6 text-gray-900"
+                    >Events</a
+                > -->
+                <!-- <a
                     href="#"
                     class="text-sm font-semibold leading-6 text-gray-900"
-                    >Marketplace</a
-                >
-                <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
-                    >Company</a
-                >
+                    >Resources</a
+                > -->
             </div>
         </div>
         <div class="flex lg:hidden">
@@ -75,8 +81,10 @@
             </button>
         </div>
         <div class="hidden lg:flex">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-                >Log in <span aria-hidden="true">&rarr;</span></a
+            <a
+                href="get-involved"
+                class="font-semibold leading-6 text-white bg-blue-600 py-3 px-4 rounded-tr-lg"
+                >Join us <span aria-hidden="true">&rarr;</span></a
             >
         </div>
     </nav>
@@ -84,9 +92,9 @@
         <div class="lg:hidden" role="dialog" aria-modal="true">
             <div class="fixed inset-0 z-10"></div>
             <div
-                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+                class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-blue-200 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
             >
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between h-16">
                     <a href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
                         <img

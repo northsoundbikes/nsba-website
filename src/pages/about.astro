@@ -1,0 +1,29 @@
+---
+import { SEO } from "astro-seo";
+import Layout from "../layouts/layout.astro";
+---
+
+<html lang="en">
+    <head>
+        <SEO
+            noindex={true}
+            title="NSBA | Representing North Sound bike riders."
+        />
+        <meta charset="utf-8" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>"
+        />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <Layout>
+        <div class="px-6 py-24 sm:py-32 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+              <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">About NSBA</h2>
+              <p class="mt-6 text-lg leading-8 text-gray-600">
+                North Sound Bicycle Advocates (NSBA) is a not-for-profit, all-volunteer group representing bicycle riders in North King and South Snohomish counties.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Our goal is to promote greater use of bikes for utility, transportation and recreation; to promote safer and more welcoming conditions for all bike riders; and to advocate for a seamless system of connected bike routes to enable trips by bike across our region.</P>
+            </div>
+          </div>
+    </Layout>
+</html>
