@@ -123,7 +123,7 @@
                         <span class="sr-only">Your Company</span>
                         <img
                             class="h-16 w-auto"
-                            src="/logo.png"
+                            src="logo.png"
                             alt=""
                         />
                     </a>

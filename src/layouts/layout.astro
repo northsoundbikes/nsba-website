@@ -2,13 +2,22 @@
 import Header from "../components/header.svelte";
 import Footer from "../components/footer.svelte";
 import "../styles/fonts.css";
+import { SEO } from "astro-seo";
 ---
 
 <head>
   <meta charset="utf-8" />
-  <script data-goatcounter="https://northsoundbikes.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
+  <script
+    data-goatcounter="https://northsoundbikes.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"></script>
+  <SEO noindex={true} title="NSBA | Representing North Sound bike riders." />
+  <meta charset="utf-8" />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>"
+  />
+  <meta name="viewport" content="width=device-width" />
 </head>
 <body>
   <Header client:load />
