@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-8">
-                <img class="h-16" src="logo.png" alt="NSBA logo" />
+                <img class="h-16" src="/logo.png" alt="NSBA logo" />
                 <p class="text-md leading-6 text-gray-300">
                     Representing bike riders across south Snohomish and north
                     King counties.
