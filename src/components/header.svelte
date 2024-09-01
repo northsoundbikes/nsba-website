@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
 
     let mobileMenuOpen = false;
-    let topbarVisible = true; // Track visibility of the events menu
+    let topbarVisible = false;
 
     function toggleMobileMenu() {
         console.log("Toggling mobile menu");
@@ -12,32 +12,14 @@
     function dismissTopbar() {
         console.log("Dismissing topbar");
         topbarVisible = false;
-        localStorage.setItem('topbarVisible', topbarVisible); // Persist state
+        localStorage.setItem("topbarVisible", topbarVisible); // Persist state
     }
 
-    // Retrieve visibility states on component mount
     onMount(() => {
-        topbarVisible = localStorage.getItem('topbarVisible') !== 'false'; // Retrieve events menu state
+        topbarVisible = localStorage.getItem("topbarVisible") !== "false"; // Retrieve events menu state
     });
 </script>
 
-{#if topbarVisible}
-<div class="flex items-center gap-x-6 bg-green-800 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-    <p class="text-sm leading-6 text-white">
-      <a href="#events">
-        <strong class="font-semibold ss-04">🔔 September rides & events announced</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Check out what's happening! 🡪
-      </a>
-    </p>
-    <div class="flex flex-1 justify-end">
-      <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]" on:click={dismissTopbar}>
-        <span class="sr-only">Dismiss</span>
-        <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-        </svg>
-      </button>
-    </div>
-</div>  
-{/if}
 <header class="bg-blue-200">
     <nav
         class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
@@ -49,14 +31,12 @@
                 <img
                     class="h-16
                      w-auto"
-                    src="logo.png"
+                    src="/logo.png"
                     alt=""
                 />
             </a>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a
-                    href="/about"
-                    class="font-semibold leading-6 text-gray-900"
+                <a href="/about" class="font-semibold leading-6 text-gray-900"
                     >About</a
                 >
                 <a
@@ -106,7 +86,7 @@
         </div>
         <div class="hidden lg:flex">
             <a
-                href="get-involved"
+                href="/get-involved"
                 class="font-semibold leading-6 text-white bg-blue-600 py-3 px-4 rounded-tr-lg"
                 >Join us <span aria-hidden="true">&rarr;</span></a
             >
@@ -121,11 +101,7 @@
                 <div class="flex items-center justify-between h-16">
                     <a href="/" class="-m-1.5 p-1.5">
                         <span class="sr-only">Your Company</span>
-                        <img
-                            class="h-16 w-auto"
-                            src="logo.png"
-                            alt=""
-                        />
+                        <img class="h-16 w-auto" src="/logo.png" alt="" />
                     </a>
                     <button
                         type="button"
@@ -165,10 +141,10 @@
                         </div>
                         <div class="py-12">
                             <a
-							href="/get-involved"
-							class="rounded-tr-lg bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-							>Join us →</a
-						>
+                                href="/get-involved"
+                                class="rounded-tr-lg bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >Join us →</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -176,3 +152,39 @@
         </div>
     {/if}
 </header>
+{#if topbarVisible}
+<div
+    class="flex items-center gap-x-6 bg-green-800 px-5 py-3 sm:px-3.5 sm:before:flex-1"
+>
+    <p class="text-sm leading-5 text-white text-center">
+        <a href="#events">
+            <strong class="font-semibold ss-04"
+                >🔔 September rides & events announced</strong
+            ><svg
+                viewBox="0 0 2 2"
+                class="mx-2 inline h-0.5 w-0.5 fill-current"
+                aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg
+            >Check out what's happening! 🡪
+        </a>
+    </p>
+    <div class="flex flex-1 justify-end">
+        <button
+            type="button"
+            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+            on:click={dismissTopbar}
+        >
+            <span class="sr-only">Dismiss</span>
+            <svg
+                class="h-5 w-5 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+            >
+                <path
+                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+                />
+            </svg>
+        </button>
+    </div>
+</div>
+{/if}
