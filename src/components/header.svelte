@@ -84,14 +84,20 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex">
+        <div class="hidden lg:flex gap-x-6 w-auto items-start">
             <a
                 href="/get-involved"
-                class="font-semibold leading-6 text-white bg-blue-600 py-3 px-4 rounded-tr-lg"
-                >Join us <span aria-hidden="true">&rarr;</span></a
+                class="font-semibold leading-6 text-white bg-blue-600 py-3 px-4"
+                >Join us</a
+            >
+            <a
+                href="https://donate.stripe.com/cN28znbeF8QMfBe001"
+                class="font-semibold leading-6 text-white bg-green-700 py-3 px-4 rounded-tr-lg"
+                >Donate to NSBA</a
             >
         </div>
     </nav>
+    <!-- Menu for devices smaller than desktop -->
     {#if mobileMenuOpen}
         <div class="lg:hidden" role="dialog" aria-modal="true">
             <div class="fixed inset-0 z-10"></div>
@@ -139,11 +145,16 @@
                                 >Get Involved</a
                             >
                         </div>
-                        <div class="py-12">
+                        <div class="py-12 flex flex-col gap-4">
                             <a
                                 href="/get-involved"
-                                class="rounded-tr-lg bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                >Join us →</a
+                                class="bg-blue-600 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >Join us</a
+                            >
+                            <a
+                                href="https://donate.stripe.com/cN28znbeF8QMfBe001"
+                                class="rounded-tr-lg bg-green-700 px-6 py-4 text-md font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                                >Donate to NSBA</a
                             >
                         </div>
                     </div>
@@ -153,38 +164,38 @@
     {/if}
 </header>
 {#if topbarVisible}
-<div
-    class="flex items-center gap-x-6 bg-green-800 px-5 py-3 sm:px-3.5 sm:before:flex-1"
->
-    <p class="text-sm leading-5 text-white text-center">
-        <a href="#events">
-            <strong class="font-semibold ss-04"
-                >🔔 September rides & events announced</strong
-            ><svg
-                viewBox="0 0 2 2"
-                class="mx-2 inline h-0.5 w-0.5 fill-current"
-                aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg
-            >Check out what's happening! 🡪
-        </a>
-    </p>
-    <div class="flex flex-1 justify-end">
-        <button
-            type="button"
-            class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
-            on:click={dismissTopbar}
-        >
-            <span class="sr-only">Dismiss</span>
-            <svg
-                class="h-5 w-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+    <div
+        class="flex items-center gap-x-6 bg-green-900 px-5 py-3 sm:px-3.5 sm:before:flex-1"
+    >
+        <p class="text-sm leading-5 text-white text-center">
+            <a href="#events">
+                <strong class="font-semibold ss-04"
+                    >🔔 October rides & events announced</strong
+                ><svg
+                    viewBox="0 0 2 2"
+                    class="mx-2 inline h-0.5 w-0.5 fill-current"
+                    aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg
+                >Check out what's happening! 🡪
+            </a>
+        </p>
+        <div class="flex flex-1 justify-end">
+            <button
+                type="button"
+                class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+                on:click={dismissTopbar}
             >
-                <path
-                    d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
-                />
-            </svg>
-        </button>
+                <span class="sr-only">Dismiss</span>
+                <svg
+                    class="h-5 w-5 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+                    />
+                </svg>
+            </button>
+        </div>
     </div>
-</div>
 {/if}
