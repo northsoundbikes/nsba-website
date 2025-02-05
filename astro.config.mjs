@@ -8,6 +8,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 import react from '@astrojs/react';
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -17,8 +19,11 @@ export default defineConfig({
     (process.env.SKIP_KEYSTATIC ? [] : [keystatic()]),
     react()
   ],
+
   vite: {
     plugins: [tailwindcss()]
   },
-  output: 'server'
+
+  output: 'server',
+  adapter: netlify()
 });
