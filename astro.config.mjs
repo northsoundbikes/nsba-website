@@ -24,6 +24,6 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  output: 'server',
+  output: process.env.SKIP_KEYSTATIC ? 'static' : 'server',
   adapter: netlify()
 });
