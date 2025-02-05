@@ -4,6 +4,7 @@ import Footer from "../components/footer.svelte";
 import "../styles/global.css";
 import "../styles/fonts.css";
 import { SEO } from "astro-seo";
+const { title } = Astro.props;
 ---
 
 <head>
@@ -13,7 +14,7 @@ import { SEO } from "astro-seo";
     async
     src="//gc.zgo.at/count.js"></script>
   <script src="https://unpkg.com/@botpoison/browser" async></script>
-  <SEO title="North Sound Bikes | Building a better North Sound for biking" />
+  <SEO title={`${title} | North Sound Bikes`} />
   <link
     rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>"

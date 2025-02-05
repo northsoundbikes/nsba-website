@@ -2,12 +2,12 @@
 import { SEO } from "astro-seo";
 import Layout from "../layouts/layout.astro";
 import Map from "../components/map.svelte";
+export const title = "Home"
 ---
 
 <html lang="en">
 	<head>
 		<SEO
-			title="North Sound Bikes | Building a better North Sound for biking"
 			description="North Sound Bikes represents bike riders across north King and south Snohomish counties. We work to improve bike infrastructure, promote biking, and ensure street safety for everyone across our region."
 		/>
 		<meta charset="utf-8" />
@@ -17,7 +17,7 @@ import Map from "../components/map.svelte";
 		/>
 		<meta name="viewport" content="width=device-width" />
 	</head>
-	<Layout>
+	<Layout title={title}>
 		<div class="relative px-6 py-4 lg:px-8">
 			<video
 				autoplay
@@ -31,7 +31,7 @@ import Map from "../components/map.svelte";
 				<source src="westgate_70.mp4" type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
-			<div class="absolute inset-0 bg-sky-950 opacity-70"></div>
+			<div class="absolute inset-0 bg-sky-950 opacity-80"></div>
 			<div class="relative z-5 mx-auto max-w-2xl py-16 sm:py-32 lg:py-32">
 				<div class="text-center">
 					<h1

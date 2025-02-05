@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/layout.astro";
+import { SEO } from "astro-seo";
+export const title = "Page not found";
+---
+
+<Layout title={title}>
+  <SEO
+    title="Page not found | North Sound Bikes"
+    description="The page you're looking for doesn't exist."
+  />
+  <section class="py-18 bg-gray-200 flex justify-center">
+    <div
+      class="max-w-md flex flex-col align-center space-y-4">
+      
+      <h1
+      class="text-2xl tracking-tight sm:text-4xl font-semibold text-center text-black"
+    >
+    
+      Page not found :(
+  </h1>
+
+    <p class="text-center">
+      Sorry, but the page you're looking for doesn't exist... head to our <a
+        href="/" class="text-blue-600 underline">home page</a
+      >, and see if you can find it there?
+    </p>
+    <img src="404.jpg" alt="A broken bike" class="rounded-t-full block w-64 mx-auto mt-4" />
+<p class="italic text-center">Photo by <a href="https://unsplash.com/@dariobroe?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dario Brönnimann</a> on <a href="https://unsplash.com/photos/a-bicycle-parked-by-a-tree-8cmkrUrSWxE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+</div>
+  </section>
+</Layout>
