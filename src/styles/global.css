@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+    --font-serif: "Parclo Serif", serif;
+    --font-sans: "Really Sans Small", sans-serif;
+}
