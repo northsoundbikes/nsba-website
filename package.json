@@ -10,20 +10,25 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^3.1.8",
-    "@astrojs/svelte": "^5.7.2",
-    "@astrojs/tailwind": "^5.1.2",
+    "@astrojs/markdoc": "^0.12.9",
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/svelte": "^7.0.4",
+    "@keystatic/astro": "^5.0.4",
+    "@keystatic/core": "^0.5.43",
     "@observablehq/plot": "^0.6.16",
-    "astro": "^4.16.7",
-    "astro-seo": "^0.8.3",
-    "ics": "^3.7.2",
-    "svelte": "^4.2.18",
-    "tailwindcss": "^3.4.3",
+    "@tailwindcss/vite": "^4.0.3",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "astro": "^5.2.5",
+    "astro-seo": "^0.8.4",
+    "ics": "^3.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "svelte": "^5.19.7",
+    "tailwindcss": "^4.0.3",
     "tailwindcss-opentype": "^1.1.0",
     "topojson-client": "^3.1.0",
-    "typescript": "^5.5.2"
-  },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7"
+    "typescript": "^5.7.3"
   }
 }
