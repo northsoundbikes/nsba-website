@@ -18,8 +18,8 @@ export default config({
         location: fields.text({ label: 'Location' }),
         description: fields.markdoc({ label: 'Description' }),
       },
-    }), 
-    posts: collection({
+    }),
+    people: collection({
       label: 'People',
       slugField: 'name',
       path: 'src/content/people/*',
@@ -27,7 +27,22 @@ export default config({
       schema: {
         name: fields.slug({ name: { label: 'Name' } }),
         bio: fields.markdoc({ label: 'Bio' }),
+        headshot: fields.image({ label: 'Headshot', validation: { required: false } }),
       },
-    })
+    }),
+    projects: collection({
+      label: 'Projects',
+      slugField: 'name',
+      path: 'src/content/projects/*',
+      format: { contentField: 'description' },
+      schema: {
+        name: fields.text({ label: 'Name' }),
+        active: fields.checkbox({ label: 'Active' }),
+        startDate: fields.datetime({ label: 'Start Date' }),
+        endDate: fields.datetime({ label: 'End Date', required: false }),
+        pointOfContact: fields.text({ label: 'Point of Contact', required: false }),
+        description: fields.markdoc({ label: 'Description' }),
+      },
+    }),
   },
 });

@@ -16,7 +16,6 @@
     "@astrojs/react": "^4.2.0",
     "@astrojs/svelte": "^7.0.4",
     "@keystatic/astro": "^5.0.4",
-    "@keystatic/core": "^0.5.43",
     "@observablehq/plot": "^0.6.16",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4.0.3",

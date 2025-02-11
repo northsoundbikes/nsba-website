@@ -14,14 +14,14 @@ const { title } = Astro.props;
     async
     src="//gc.zgo.at/count.js"></script>
   <script src="https://unpkg.com/@botpoison/browser" async></script>
-  <SEO title={`${title} | North Sound Bikes`} />
+  <SEO title={`${title} | North Sound Bicycle Advocates`} description="North Sound Bikes represents bike riders across north King and south Snohomish counties. We work to improve bike infrastructure, promote biking, and ensure street safety for everyone across our region."/>
   <link
     rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>"
   />
   <meta name="viewport" content="width=device-width" />
 </head>
-<body>
+<body class="bg-blue-200">
   <Header client:load />
   <slot />
   <Footer />
