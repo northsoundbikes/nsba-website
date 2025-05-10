@@ -170,7 +170,7 @@
         <p class="text-sm leading-5 text-white text-center">
             <a href="#events">
                 <strong class="font-semibold ss-04"
-                    >🔔 April events announced</strong
+                    >🔔 May Bike Everywhere events announced</strong
                 ><svg
                     viewBox="0 0 2 2"
                     class="mx-2 inline h-0.5 w-0.5 fill-current"
